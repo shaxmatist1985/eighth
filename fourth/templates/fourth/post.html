@@ -1,0 +1,10 @@
+{% extends 'fourth/base.html' %}
+{% block content %}
+<h1>{{title}}</h1>
+
+{% if post.photo %}
+<p><img class="img-article-left" src="{{post.photo.url}}"></p>
+{% endif %}
+
+<p>{{post.content|linebreaks}}</p>
+{% endblock %}
